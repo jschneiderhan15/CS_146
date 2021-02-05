@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LaundryAid&#169; - Reports</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Stevens Laundry Aid <br></h1>
+                <h2>Report a Bug or Error</h2>
+            </div>
+            <nav>
+                <ul class = "navList">
+                    <li><a href = "home.html" class = "navButton"> Home </a></li>
+                    <li><a href = "about.html" class = "navButton"> About Us </a></li>
+                    <li><a href = "laundryHome.html" class = "navButton"> Do Some Laundry! </a></li>
+                    <li><a href = "report.html" class = "navButton"> Report an Error </a></li>
+                </ul>
+            </nav>
+        </header>   
+        <div class = "report" id = "reportBody">
+            <h2>Have a Question, Comment, or Concern? Let us know!</h2>
+            <a href = "mailto:laundryaidstevens@gmail.com">Click here!</a><br><br>
+            <a> We'll get back to you (or just help with your problem) as soon as possible!</a><br><br>
+            <div class = "form">
+                <a>...Or, alternatively: Fill out a report form directly on our website:</a><br><br>
+                <form id = "input" name = "reportForm">
+                    <div class = "formBody">
+                        <a>First Name:</a> <input type = "text" name = "fName" id = "firstName" placeholder = "Enter here..." required/> <br><br>
+                        <a>Last Name:</a> <input type = "text" name = "lName" id = "lastName" placeholder = "Enter here..." required/> <br><br>
+                        <a>Student E-mail:</a> <input type = "text" name = "mail" id = "email" placeholder = "Enter here..." required/> <br><br>
+                        <a>Dorm / Hall:</a> <select name = "dorms">
+                            <option>Castle Point</option>
+                            <option>Davis</option>
+                            <option>Humphrey's</option>
+                            <option>Jonas</option>
+                            <option>River Terrace</option>
+                        </select><br><br>
+                        <a>Please select all that apply to your report:</a><br>
+                        <input type = "checkbox" name = "type" value = "1">The website is broken!<br>
+                        <input type = "checkbox" name = "type" value = "2">One of the machines is mislabelled  <input type = "text" name ="machineMislabel" id="misLabelMachine" placeholder="Which machine?"/><br>
+                        <input type = "checkbox" name = "type" value = "3">A machine is out of order  <input type = "text" name ="machineOrder" id="OOOMachine" placeholder="Which machine?"/><br>
+                        <input type = "checkbox" name = "type" value = "4">I just like filling out forms<br><br>
+                        <a>Something more specific? Please tell us:</a><input type = "text" name = "specifictype" id = "specType" placeholder = "Enter Here..."/><br><br>
+                        <div class = "subBut"><button onclick = "submitButton()">Submit Report</button></div><br><br>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class = "copyright">
+                <hr>
+                <p> Copyright 2019 LaundryAid Co. &#169;
+                <br> Made by Jack Schneiderhan, Christian de Poortere, Max Surets, and Michael Karsen
+                <br> Thank you for using our website!</p>
+        </div>
+        <script src="./functions.js"></script>
+    </body>
+</html>

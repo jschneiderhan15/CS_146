@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Davis Laundry</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+        <body>
+            <header>
+                <div>
+                    <h1>Stevens Laundry Aid <br></h1>
+                    <h2>Castle Point Laundry</h2>
+                </div>
+                <nav>
+                    <ul class = "navList">
+                        <li><a href = "home.html" class = "navButton"> Home </a></li>
+                        <li><a href = "about.html" class = "navButton"> About Us </a></li>
+                        <li><a href = "laundryHome.html" class = "navButton"> Do Some Laundry! </a></li>
+                        <li><a href = "report.html" class = "navButton"> Report an Error </a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1 class = "laundryHead">Welcome to the Davis Dormitory Laundry Site!</h1>
+            <h2 class = "laundryHead">Washers:</h2>
+            <br>
+            <div class = "laundry">
+                <figure><img class = "machine" src = "washingMachine.png" alt = "washingMachine">
+                <figcaption>WM 1<br>
+                <button id = "but1" onclick = startTimerWasher(1)>Claim</button>
+                <div id = 'timer1'></div></figcaption></figure>
+                <figure><img class = "machine" src = "washingMachine.png" alt = "washingMachine">
+                <figcaption>WM 2<br>
+                <button id = "but2" onclick = startTimerWasher(2)>Claim</button>
+                <div id = 'timer2'></div></figcaption></figure>
+                <figure><img class = "machine" src = "washingMachine.png" alt = "washingMachine">
+                <figcaption>WM 3<br>
+                <button id = "but3" onclick = startTimerWasher(3)>Claim</button>
+                <div id = 'timer3'></div></figcaption></figure>
+                <figure><img class = "machine" src = "washingMachine.png" alt = "washingMachine">
+                <figcaption>WM 4<br>
+                <button id = "but4" onclick = startTimerWasher(4)>Claim</button>
+                <div id = 'timer4'></div></figcaption></figure>
+                <figure><img class = "machine" src = "washingMachine.png" alt = "washingMachine">
+                <figcaption>WM 5<br>
+                <button id = "but5" onclick = startTimerWasher(5)>Claim</button>
+                <div id = 'timer5'></div></figcaption></figure>
+            </div>
+            <br>
+            <h2 class = "laundryHead">Driers:</h2>
+            <br>
+            <div class = "laundry">
+                <figure>
+                <img class = "machine" src = "dryer.png" alt = "dryer">
+                <figcaption>DM 1<br>
+                <button id = "but6" onclick = startTimerDryer(6)>Claim</button>
+                <div id = 'timer6'></div></figcaption></figure>
+                <figure>
+                <img class = "machine" src = "dryer.png" alt = "dryer">
+                <figcaption>DM 2<br>
+                <button id = "but7" onclick = startTimerDryer(7)>Claim</button>
+                <div id = 'timer7'></div></figcaption></figure>
+                <figure>
+                <img class = "machine" src = "dryer.png" alt = "dryer">
+                <figcaption>DM 3<br>
+                <button id = "but8" onclick = startTimerDryer(8)>Claim</button>
+                <div id = 'timer8'></div></figcaption></figure>
+                <figure>
+                <img class = "machine" src = "dryer.png" alt = "dryer">
+                <figcaption>DM 4<br>
+                <button id = "but9" onclick = startTimerDryer(9)>Claim</button>
+                <div id = 'timer9'></div></figcaption></figure>
+                <figure>
+                <img class = "machine" src = "dryer.png" alt = "dryer">
+                <figcaption>DM 5<br>
+                <button id = "but10" onclick = startTimerDryer(10)>Claim</button>
+                <div id = 'timer10'></div></figcaption></figure>
+            </div>
+            <div class = "copyright">
+                <hr>
+                <p> Copyright 2019 LaundryAid Co. &#169;
+                <br> Made by Jack Schneiderhan, Christian de Poortere, Max Surets, and Michael Karsen
+                <br> Thank you for using our website!</p>
+            </div>
+            <script src="./functions.js"></script>
+        </body>
+</html>
